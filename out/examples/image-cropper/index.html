@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AlloyUI</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Eduardo Lundgren, Nate Cavanaugh">
+    <meta name="description" content="Provides a draggable/resizable cropper widget to crop image sizes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook Tags -->
+    <meta property="fb:app_id" content="176947299114210">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:9778">
+    <meta property="og:image" content="http://localhost:9778/img/facebook-share.jpg">
+    <meta property="og:title" content="Examples - Image Cropper | AlloyUI">
+    <meta property="og:description" content="Provides a draggable/resizable cropper widget to crop image sizes.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://localhost:9778/img/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis|Roboto:400,700,700italic,400italic">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://cdn.alloyui.com/3.0.0pr1/aui-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/main.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/page.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/examples.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/code.css">
+
+    <!-- JS -->
+    <script src="http://cdn.alloyui.com/3.0.0pr1/aui/aui-min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="http://localhost:9778/" class="navbar-brand">
+                <img src="http://localhost:9778/img/logo.svg" alt="AlloyUI Logo" width="126" height="24">
+            </a>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="./" onclick="return false;" class="dropdown-toggle">v3.0.x <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">v2.5.x</a></li>
+                        <li><a href="#">v2.0.x</a></li>
+                        <li><a href="#">v1.5.x</a></li>
+                        <li><a href="#">v1.0.x</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://localhost:9778/examples/">Examples</a></li>
+                <li><a href="http://localhost:9778/tutorials/">Tutorials</a></li>
+                <li><a href="http://localhost:9778/contributing/">Contributing</a></li>
+                <li><a href="http://localhost:9778/api/">API Docs</a></li>
+                <li><a href="http://localhost:9778/rosetta-stone/">Rosetta Stone</a></li>
+                <li><a href="https://yuilibrary.com/">YUI</a></li>
+                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+<main id="Image Cropper">
+    <header class="page-title">
+        <h5>Examples</h5>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+    <div class="col-md-9">
+        <h6 id="single-title">Image Cropper</h6>
+
+        <div id="single-dropdown" class="btn-group">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-new-window"></span> API Docs
+            </button>
+            <button type="button" class="btn btn-default dropdown-toggle">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="http://alloyui.com/api/modules/aui-image-cropper.html#attributes">Attributes</a></li>
+                <li><a href="http://alloyui.com/api/modules/aui-image-cropper.html#events">Events</a></li>
+                <li><a href="http://alloyui.com/api/modules/aui-image-cropper.html#methods">Methods</a></li>
+            </ul>
+        </div>
+
+        <ul id="single-tabs" class="nav nav-tabs">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        <li class="active">
+                    
+                        <a href="/examples/image-cropper">Introduction</a></li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+
+        <p>Provides a draggable/resizable cropper widget to crop image sizes.</p>
+
+        <hr>
+
+        <h4 id="getting-started">Getting Started</h4>
+<p>First load the seed and CSS files, if you haven&#39;t yet.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://cdn.alloyui.com/3.0.0pr1/aui/aui-min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://cdn.alloyui.com/3.0.0pr1/aui-css/css/bootstrap.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">link</span>&gt;</span>
+</code></pre>
+<p>Then initialize AlloyUI and load the Image Cropper module.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-comment">// code goes here</span>
+  }
+);
+</code></pre>
+<hr>
+<h4 id="using-image-cropper">Using Image Cropper</h4>
+<p>Create an HTML element with the desired crop image nested inside:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myImageCropper"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myImage"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://alloyui.com/image-cropper/img/crop-image.jpg"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Now create a new instance of Image Cropper component by setting <code>srcNode</code> to our image element. Finally, let&#39;s render it!</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">new</span> Y.ImageCropper(
+      {
+        srcNode: <span class="hljs-string">"#myImage"</span>
+      }
+    ).render();
+  }
+);
+</code></pre>
+<hr>
+<h4 id="configuring-image-cropper">Configuring Image Cropper</h4>
+<p>There are some other optional parameters that you can pass to your Image Cropper instance.</p>
+<p>For example, you can turn of Cropper resizing by setting <code>resizable</code> to <code>false</code>.  Also, you can prevent Image Cropper from moving by setting <code>movable</code> to <code>false</code>.  And if you need to maintain a constant aspect ratio for Image Cropper, set <code>preserveRatio</code> to <code>true</code>.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">new</span> Y.ImageCropper(
+      {
+        movable: <span class="hljs-literal">false</span>,
+        preserveRatio: <span class="hljs-literal">true</span>,
+        resizable: <span class="hljs-literal">false</span>,
+        srcNode: <span class="hljs-string">"#myImage"</span>
+      }
+    ).render();
+  }
+);
+</code></pre>
+<p>Setting <code>cropWidth</code> and <code>cropHeight</code> to integers will set the pixel width and height for the Image Cropper.  Likewise, passing integers to <code>minWidth</code> and <code>minHeight</code> will set the minimum pixel width and height for the Image Cropper.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">new</span> Y.ImageCropper(
+      {
+        cropHeight: <span class="hljs-number">100</span>,
+        cropWidth: <span class="hljs-number">100</span>,
+        minHeight: <span class="hljs-number">50</span>,
+        minWidth: <span class="hljs-number">50</span>,
+        srcNode: <span class="hljs-string">"#myImage"</span>
+      }
+    ).render();
+  }
+);
+</code></pre>
+<p>Image Cropper&#39;s <code>region</code> property returns you the current crop region.  To see crop region values update while you adjust Image Cropper, create an HTML element where you can store your region values, for example <code>#myCropSize</code>.  Now bind the event handler <code>after</code> to <code>imageCropper</code> to execute on the <code>crop</code> event.  The event handler will set the the HTML of <code>#myCropSize</code> with the updated crop region&#39;s width and height.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">var</span> imageCropper = <span class="hljs-keyword">new</span> Y.ImageCropper(
+      {
+        srcNode: <span class="hljs-string">"#myImage"</span>
+      }
+    ).render();
+
+    <span class="hljs-keyword">var</span> cropSize = Y.one(<span class="hljs-string">'#myCropSize'</span>);
+
+    imageCropper.after(
+      <span class="hljs-string">'crop'</span>,
+      <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(event)</span> {</span>
+        <span class="hljs-keyword">var</span> cropRegion = imageCropper.get(<span class="hljs-string">'region'</span>);
+        cropSize.html(<span class="hljs-string">'Width: '</span> + cropRegion.width + <span class="hljs-string">' Height: '</span> + cropRegion.height);
+      }
+    );
+  }
+);
+</code></pre>
+<p>If you want to output your cropped image to another node, you can also use Image Cropper <code>region</code> to restyle the cropped image.  Using an event handler that is triggered by the <code>click</code> event and bound to the <code>cropImgButton</code> button, we can use the <code>setStyles</code> method to apply the crop region values.  This will update our <code>croppedImage</code> node to the current Image Cropper region each time we click <code>cropImgButton</code>.  Finally, let&#39;s show the cropped image with the <code>show</code> method.</p>
+<div class="alert alert-info">
+  <strong>Note:</strong> be sure to add the classes <code>cropped-image</code> and <code>aui-helper-hidden</code> to your <code>#myCroppedImage</code> element so that Image Cropper handles the image crop properly.
+</div>
+
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-image-cropper'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">var</span> imageCropper = <span class="hljs-keyword">new</span> Y.ImageCropper(
+      {
+        srcNode: <span class="hljs-string">"#myImage"</span>
+      }
+    ).render();
+
+    <span class="hljs-keyword">var</span> image = Y.one(<span class="hljs-string">'#myImage'</span>);
+    <span class="hljs-keyword">var</span> cropImgButton = Y.one(<span class="hljs-string">'#myCropButton'</span>);
+    <span class="hljs-keyword">var</span> croppedImage = Y.one(<span class="hljs-string">'#myCroppedImage'</span>);
+
+    cropImgButton.on(
+      <span class="hljs-string">'click'</span>,
+      <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(event)</span> {</span>
+        <span class="hljs-keyword">var</span> cropRegion = imageCropper.get(<span class="hljs-string">'region'</span>);
+        croppedImage.setStyles(
+          {
+            <span class="hljs-string">'backgroundPosition'</span>: (-cropRegion.x) + <span class="hljs-string">'px '</span> + (-cropRegion.y) + <span class="hljs-string">'px'</span>,
+            height: cropRegion.height,
+            width: cropRegion.width
+          }
+        );
+      }
+    );
+
+    croppedImage.show();
+  }
+);
+</code></pre>
+
+
+        <div class="alert alert-info">
+            For more information about configuration, check out our <a href="http://alloyui.com/api/modules/aui-image-cropper.html" target="_blank">API Docs</a>.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/ace-editor">
+                    
+                        Ace Editor</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/affix">
+                    
+                        Affix</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/alert">
+                    
+                        Alert</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/audio">
+                    
+                        Audio</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/button">
+                    
+                        Button</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/carousel">
+                    
+                        Carousel</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/char-counter">
+                    
+                        Char Counter</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/color-picker">
+                    
+                        Color Picker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/datatable">
+                    
+                        Data Table</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/datepicker">
+                    
+                        Datepicker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/diagram-builder">
+                    
+                        Diagram Builder</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/dropdown">
+                    
+                        Dropdown</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/form-builder">
+                    
+                        Form Builder</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/form-validator">
+                    
+                        Form Validator</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/io">
+                    
+                        I/O</a>
+                    </li>
+                
+            
+                
+                    
+                        <li class="active"><a href="/examples/image-cropper">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                    
+                        Image Cropper</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/image-viewer">
+                    
+                        Image Viewer</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/modal">
+                    
+                        Modal</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/node">
+                    
+                        Node</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/pagination">
+                    
+                        Pagination</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/popover">
+                    
+                        Popover</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/progressbar">
+                    
+                        Progress Bar</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/rating">
+                    
+                        Rating</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/scheduler">
+                    
+                        Scheduler</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/scrollspy">
+                    
+                        Scrollspy</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/sortable">
+                    
+                        Sortable</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/surface">
+                    
+                        Surface</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tabview">
+                    
+                        Tabview</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/timepicker">
+                    
+                        Timepicker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/toggler">
+                    
+                        Toggler</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/toolbar">
+                    
+                        Toolbar</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tooltip">
+                    
+                        Tooltip</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tree">
+                    
+                        Tree View</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/undo-redo">
+                    
+                        Undo/Redo</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/video">
+                    
+                        Video</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/viewport">
+                    
+                        Viewport</a>
+                    </li>
+                
+            
+        </ul>
+    </div>
+
+</div>
+
+
+<!-- <script src="http://localhost:9778/js/single.js"></script> -->
+
+<link rel="stylesheet" href="http://localhost:9778/css/single.css">
+        </div>
+    </div>
+</main>
+
+    <script src="http://localhost:9778/js/navbar.js"></script>
+</body>
+</html>

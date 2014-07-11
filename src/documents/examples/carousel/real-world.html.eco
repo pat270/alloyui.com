@@ -1,0 +1,16 @@
+---
+title: Real World Example
+layout: single-example
+category: Examples
+---
+
+<link rel="stylesheet" href="./assets/css/real-world.css">
+
+<%- @readFile('basic-markup.html') %>
+
+<%- @codeFile('basic-markup.html', 'html') %>
+<%- @codeFile('real-world.js', 'javascript') %>
+
+<script>
+  <%- @readFile('real-world.js') %>
+</script>

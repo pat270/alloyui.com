@@ -1,0 +1,16 @@
+---
+title: Basic Example
+layout: single-example
+category: Examples
+---
+
+<link rel="stylesheet" href="./assets/css/basic.css">
+
+<%- @readFile('basic-markup.html') %>
+<%- @codeFile('basic-markup.html', 'html') %>
+
+<%- @codeFile('basic.js', 'javascript') %>
+
+<script>
+    <%- @readFile('basic.js') %>
+</script>

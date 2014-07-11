@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AlloyUI</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Eduardo Lundgren, Nate Cavanaugh">
+    <meta name="description" content="AlloyUI is a framework built on top of YUI3 (JavaScript) that uses Bootstrap (HTML/CSS) to provide a simple API for building high scalable applications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook Tags -->
+    <meta property="fb:app_id" content="176947299114210">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:9778">
+    <meta property="og:image" content="http://localhost:9778/img/facebook-share.jpg">
+    <meta property="og:title" content="contributing | AlloyUI">
+    <meta property="og:description" content="AlloyUI is a framework built on top of YUI3 (JavaScript) that uses Bootstrap (HTML/CSS) to provide a simple API for building high scalable applications.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://localhost:9778/img/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis|Roboto:400,700,700italic,400italic">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://cdn.alloyui.com/3.0.0pr1/aui-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/main.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/page.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/examples.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/code.css">
+
+    <!-- JS -->
+    <script src="http://cdn.alloyui.com/3.0.0pr1/aui/aui-min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="http://localhost:9778/" class="navbar-brand">
+                <img src="http://localhost:9778/img/logo.svg" alt="AlloyUI Logo" width="126" height="24">
+            </a>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="./" onclick="return false;" class="dropdown-toggle">v3.0.x <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">v2.5.x</a></li>
+                        <li><a href="#">v2.0.x</a></li>
+                        <li><a href="#">v1.5.x</a></li>
+                        <li><a href="#">v1.0.x</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://localhost:9778/examples/">Examples</a></li>
+                <li><a href="http://localhost:9778/tutorials/">Tutorials</a></li>
+                <li><a href="http://localhost:9778/contributing/">Contributing</a></li>
+                <li><a href="http://localhost:9778/api/">API Docs</a></li>
+                <li><a href="http://localhost:9778/rosetta-stone/">Rosetta Stone</a></li>
+                <li><a href="https://yuilibrary.com/">YUI</a></li>
+                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+<main id="contributing">
+    <header class="page-title">
+        <h5>contributing</h5>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <section>
+    <h6>Repos</h6>
+    <p>So you want to help us? That’s pretty awesome!</p>
+    <p>We are very happy to accept external contributions in the form of feedback, bug reports or pull requests :)</p>
+    <p>Feel free to help on one of these two primary repos:</p>
+    <ul>
+        <li><a href="https://github.com/liferay/alloy-ui/">AlloyUI</a></li>
+        <li><a href="https://github.com/liferay/alloyui.com/">AlloyUI.com</a></li>
+    </ul>
+</section>
+
+<section>
+    <h6>Issues</h6>
+    <p>First of all, you should know that we're not using the <a href="https://github.com/liferay/alloy-ui/issues">GitHub Issues</a>, instead we use <a href="http://issues.liferay.com/browse/AUI">Jira</a>. In order for us to help you please check that you've completed the following steps:</p>
+    <ul>
+        <li>Make sure that you're using the latest version.</li>
+        <li>Look through the list of issues to ensure that the bug hasn't been reported before.</li>
+    </ul>
+    <p>If you're still facing the problem, go ahead and <a href="http://issues.liferay.com/secure/CreateIssue!default.jspa">create an issue</a>. Just remember to include as much information about the bug as possible.</p>
+</section>
+
+<section>
+    <h6>Code Style</h6>
+    <p>This project uses single-quotes and four space indentation. Please ensure any pull requests follow this closely by using the <a href="https://github.com/liferay/alloyui.com/blob/master/.editorconfig">EditorConfig file</a> and linting your code with our <a href="https://github.com/liferay/alloyui.com/blob/master/.jshintrc">JSHint options</a>. If you notice existing code which doesn't follow these practices, feel free to shout out and we will change it.</p>
+    <p><a href="https://github.com/liferay/alloy-ui/wiki/Code-Style-Guidelines" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-new-window"></span> Code Style Guidelines</a></p>
+</section>
+
+<section>
+    <h6>Tests</h6>
+    <p>No single commit should go to AlloyUI source tree without tests. Exceptions are allowed for some source formatting (like renaming variables or converting spaces to tabs, etc.), but for each bugfix or for each feature added, <strong>tests must be present</strong>.</p>
+    <p><a href="https://github.com/liferay/alloy-ui/wiki/Testing-Guidelines" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-new-window"></span> Testing Guidelines</a></p>
+<section>
+
+<section>
+    <h6>Docs</h6>
+    <p>All code should be properly documented using <a href="http://yui.github.io/yuidoc/syntax/index.html">YUIDoc syntax</a>. Documentation should be considered as part of the code.</p>
+    <p><a href="https://github.com/liferay/alloy-ui/wiki/Documentation-Guidelines" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-new-window"></span> Documentation Guidelines</a></p>
+</section>
+
+<section>
+    <h6>History</h6>
+    <p>The changes should be described in <code>HISTORY.md</code> file which every module has, so it is easy to track which changes have been added between two versions.</p>
+</section>
+
+<section>
+    <p>This project was created by <a href="https://twitter.com/eduardolundgren">Eduardo Lundgren</a> and <a href="https://twitter.com/natecavanaugh">Nate Cavanaugh</a> back in 2009. Since then a lot of contributors helped us. Meet them!</p>
+    <div id="contributors"></div>
+</section>
+
+<script src="http://localhost:9778/js/contributors.js"></script>
+        </div>
+    </div>
+</main>
+
+    <script src="http://localhost:9778/js/navbar.js"></script>
+</body>
+</html>

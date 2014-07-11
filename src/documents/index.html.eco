@@ -1,0 +1,62 @@
+---
+layout: main
+---
+
+<header class="home-header">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <%- @partial('menu') %>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 move-up">
+                <div class="h1-group">
+                    <h1>The Power of <span>YUI</span></h1>
+                    <h1>The Flexibility of <span>Bootstrap</span></h1>
+                </div>
+                <h2>AlloyUI is a JavaScript framework that provides a simple API for building high scalable applications</h2>
+                <div class="call-to-action">
+                    <button type="button" class="btn btn-lg btn-success">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                        Download
+                    </button>
+                    <button type="button" class="btn btn-lg btn-info">
+                        <span class="glyphicon glyphicon-resize-small"></span>
+                        Fork
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 move-down">
+                <img id="dog-header" src="<%= @getAssetsUrl() %>/img/dog-header.png" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="testimonials">
+    <div class="container">
+        <blockquote>
+            <p>"When AlloyUI arrived on the scene, it added a new dimension to YUI contributorship. Professional, robust, and beautifully designed, the Alloy project and its engineers created a world of new options for YUI implementers, and it helped the YUI project turn the corner to become a contributor-driven, community-owned open source project." <br>
+            <span class="author">— Eric Miraglia, Product Manager, Google Inc. &amp; Former YUI Manager</span></p>
+        </blockquote>
+    </div>
+</div>
+
+<section class="basic-tutorial home-section">
+    <h3>Get Started</h3>
+</section>
+
+<section class="why home-section">
+    <h3>Why AlloyUI</h3>
+    <p>A lot of people ask, why they should invest their time on AlloyUI? Or why not just use jQuery with their gigantic ecosystem of plugins?</p><p>The thing is, DOM manipulation is just the tip of the iceberg when you are talking about modern and highly scalable applications. You’ll probably need another library for templating (like Mustache / Handlebars), another for modular loading (like RequireJS/HeadJS), another for MVC structuring (like Backbone/Ember), another for UI components (like jQueryUI/ExtJS) and so on.</p><p>Well, AlloyUI comes with all of those things together. So there’s no mess between different libraries, just a uniform API that makes your life easier. It’s mantained by highly qualified engineers of Liferay, it’s built on top of YUI3 (an awesome project made by Yahoo!) and uses Bootstrap (another cool project made by Twitter).</p>
+</section>
+
+<div id="content">
+    <h2>About us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin pellentesque, est ut venenatis aliquam, lorem quam porttitor ligula, eget ultrices velit dui sed quam. Praesent vehicula placerat lectus. Nulla pede. Quisque a nulla quis massa pulvinar sagittis. Pellentesque neque massa, mattis vulputate, pellentesque nec, vehicula volutpat, purus. Proin pretium dui et nulla cursus eleifend. Aenean aliquam urna eget urna. Vestibulum euismod elit. Donec eget augue sit amet neque elementum pretium. Proin posuere lacus id lacus. Duis vel justo suscipit neque ornare iaculis.</p>
+    <p>Ut urna urna, rhoncus eget, vestibulum tempus, venenatis non, nunc. Nunc consequat quam in nulla. Praesent feugiat posuere orci. Sed ac ante. Mauris pellentesque massa vitae ante mattis bibendum. Quisque dapibus lectus eu eros. Nulla facilisi. Praesent hendrerit egestas erat. Suspendisse at velit. Quisque mollis feugiat est. Curabitur ut leo. Cras auctor semper augue. Pellentesque leo pede, tempus sed, ornare in, venenatis sed, nisl. Quisque est velit, eleifend vitae, mollis ac, adipiscing at, eros. Mauris velit. Etiam nec lorem. Vestibulum pellentesque ligula a velit. Maecenas felis metus, suscipit et, eleifend vel, accumsan vitae, magna. Phasellus ut justo vel magna congue laoreet.</p>
+    <p>Ut urna urna, rhoncus eget, vestibulum tempus, venenatis non, nunc. Nunc consequat quam in nulla. Praesent feugiat posuere orci. Sed ac ante. Mauris pellentesque massa vitae ante mattis bibendum. Quisque dapibus lectus eu eros. Nulla facilisi. Praesent hendrerit egestas erat. Suspendisse at velit. Quisque mollis feugiat est. Curabitur ut leo. Cras auctor semper augue. Pellentesque leo pede, tempus sed, ornare in, venenatis sed, nisl. Quisque est velit, eleifend vitae, mollis ac, adipiscing at, eros. Mauris velit. Etiam nec lorem. Vestibulum pellentesque ligula a velit. Maecenas felis metus, suscipit et, eleifend vel, accumsan vitae, magna. Phasellus ut justo vel magna congue laoreet.</p>
+    <p>Ut urna urna, rhoncus eget, vestibulum tempus, venenatis non, nunc. Nunc consequat quam in nulla. Praesent feugiat posuere orci. Sed ac ante. Mauris pellentesque massa vitae ante mattis bibendum. Quisque dapibus lectus eu eros. Nulla facilisi. Praesent hendrerit egestas erat. Suspendisse at velit. Quisque mollis feugiat est. Curabitur ut leo. Cras auctor semper augue. Pellentesque leo pede, tempus sed, ornare in, venenatis sed, nisl. Quisque est velit, eleifend vitae, mollis ac, adipiscing at, eros. Mauris velit. Etiam nec lorem. Vestibulum pellentesque ligula a velit. Maecenas felis metus, suscipit et, eleifend vel, accumsan vitae, magna. Phasellus ut justo vel magna congue laoreet.</p>
+    <p>Ut urna urna, rhoncus eget, vestibulum tempus, venenatis non, nunc. Nunc consequat quam in nulla. Praesent feugiat posuere orci. Sed ac ante. Mauris pellentesque massa vitae ante mattis bibendum. Quisque dapibus lectus eu eros. Nulla facilisi. Praesent hendrerit egestas erat. Suspendisse at velit. Quisque mollis feugiat est. Curabitur ut leo. Cras auctor semper augue. Pellentesque leo pede, tempus sed, ornare in, venenatis sed, nisl. Quisque est velit, eleifend vitae, mollis ac, adipiscing at, eros. Mauris velit. Etiam nec lorem. Vestibulum pellentesque ligula a velit. Maecenas felis metus, suscipit et, eleifend vel, accumsan vitae, magna. Phasellus ut justo vel magna congue laoreet.</p>
+</div>

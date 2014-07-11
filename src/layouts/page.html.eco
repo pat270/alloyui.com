@@ -1,0 +1,19 @@
+---
+layout: main
+---
+
+<header class="main-header">
+    <%- @partial('menu') %>
+</header>
+
+<main id="<%= @document.title %>">
+    <header class="page-title">
+        <h5><%= @document.category || @document.title %></h5>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <%- @content %>
+        </div>
+    </div>
+</main>

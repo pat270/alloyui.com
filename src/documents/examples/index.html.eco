@@ -1,0 +1,36 @@
+---
+title: Examples
+layout: page
+index: true
+---
+
+<section>
+    <h6>Recently Updated</h6>
+    <div class="row">
+        <% for example in @getCollection("featuring").toJSON(): %>
+            <% if example.intro: %>
+                <a class="example-item col-xs-12 col-sm-6 col-md-3" href="<%= @getSiteUrl() %><%= example.url %>">
+                    <img class="example-item-image" src="<%= @getSiteUrl() %><%= example.url %>/assets/img/icon.svg" alt="<%= example.title %>">
+                    <h3 class="example-item-title"><%= example.title %></h3>
+                    <p class="example-item-description"><%= example.description %></p>
+                </a>
+            <% end %>
+        <% end %>
+    </div>
+</section>
+
+<section>
+    <h6>And more</h6>
+
+    <div class="row">
+        <% for example in @getCollection("examples").toJSON(): %>
+            <% if example.intro && !example.featuringOrder: %>
+                <a class="example-item col-xs-12 col-sm-6 col-md-3" href="<%= @getSiteUrl() %><%= example.url %>">
+                    <img class="example-item-image" src="<%= @getSiteUrl() %><%= example.url %>/assets/img/icon.svg" alt="<%= example.title %>">
+                    <h3 class="example-item-title"><%= example.title %></h3>
+                    <p class="example-item-description"><%= example.description %></p>
+                </a>
+            <% end %>
+        <% end %>
+    </div>
+</section>

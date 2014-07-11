@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "dependencies": {
+    "docpad": "~6.69.0",
+    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-ghpages": "~2.4.2",
+    "docpad-plugin-highlightjs": "~2.2.0",
+    "docpad-plugin-marked": "~2.2.0",
+    "docpad-plugin-partials": "~2.9.0"
+  },
+  "scripts": {
+    "deploy": "docpad deploy-ghpages --env static",
+    "generate": "docpad generate --env static",
+    "server": "docpad server",
+    "test": "docpad generate --silent",
+    "watch": "docpad run"
+  }
+}

@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-color: #bce8f1;
+}
+
+pre {
+    padding: 0;
+    border-color: #bce8f1;
+}
+
+.main-header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: #011233;
+}
+
+.home-header {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background: #011233;
+}
+
+.stars, .twinkling {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    z-index: 0;
+    background: transparent url(../img/stars.png) repeat top center;
+}
+
+.twinkling {
+    /*display: none;*/
+    z-index: 1;
+    background: transparent url(../img/twinkling-blue.png) repeat top center;
+    -moz-animation: move-twink 200s linear infinite;
+    -ms-animation: move-twink 200s linear infinite;
+    -o-animation: move-twink 200s linear infinite;
+    -webkit-animation: move-twink 200s linear infinite;
+    animation: move-twink 200s linear infinite;
+}
+
+@keyframes move-twink {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+@-webkit-keyframes move-twink {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+@-moz-keyframes move-twink {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+@-ms-keyframes move-twink {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar-default {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    font-family: 'Roboto', sans-serif;
+    z-index: 3;
+}
+
+.navbar-default .navbar-nav {
+    margin: 0;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav {
+        display: inline-block;
+    }
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+    padding: 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 18px;
+        padding-bottom: 12px;
+    }
+}
+
+/* Collapse
+   ========================================================================== */
+
+.navbar-default .navbar-collapse {
+    border: 0;
+    /*background: #fff;
+    color: #01adee;*/
+}
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-collapse > li > a {
+        background: #fff;
+        color: #01adee;
+    }
+}
+
+/* Dropdown
+   ========================================================================== */
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+.navbar-default .dropdown-menu {
+    min-width: initial;
+}
+
+.navbar-default .dropdown-menu > li > a {
+    padding: 3px 21px;
+    color: #01adee;
+}
+
+.navbar-default .dropdown-menu > li > a:hover,
+.navbar-default .dropdown-menu > li > a:focus {
+    background: #cceffc;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        background: #fff;
+        color: #01adee;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        background: #cceffc;
+        color: #01adee;
+    }
+
+    .navbar-default .dropdown-toggle {
+        display: inline-block;
+        padding-top: 18px;
+        padding-bottom: 12px;
+    }
+}
+
+/* Title
+   ========================================================================== */
+
+.h1-group {
+    margin: 50px 0 20px;
+}
+
+.home-header h1 {
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.home-header h1 span {
+    color: #01adee;
+}
+
+/* Small devices (tablets and up) */
+@media (min-width: 768px) {
+    .home-header h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+}
+
+/* Subtitle
+   ========================================================================== */
+
+.home-header h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Small devices (tablets and up) */
+@media (min-width: 768px) {
+    .home-header h2 {
+        text-align: left;
+    }
+}
+
+/* Dog Illustration
+   ========================================================================== */
+
+#dog-header {
+    display: none;
+}
+
+/* Small devices (tablets and up) */
+@media (min-width: 768px) {
+    #dog-header {
+        display: block;
+        margin-top: 40px;
+    }
+}
+
+/* Call-to-action Buttons
+   ========================================================================== */
+
+.call-to-action {
+    margin: 0 auto;
+    width: 235px;
+}
+
+/* Small devices (tablets and up) */
+@media (min-width: 768px) {
+    .call-to-action {
+        margin: 0;
+    }
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content { max-width: 28em; text-align: justify; margin: 0 auto; padding: 2em; }
+
+#content p { margin: 0 0 2em; }
+
+/* ==========================================================================
+   Testimonials
+   ========================================================================== */
+
+.testimonials {
+    background: #cbeffd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonials p {
+    font-size: 14px;
+
+}
+
+/* ==========================================================================
+   Basic Tutorial
+   ========================================================================== */
+
+.home-section {
+    background: #e6f8ff;
+    font-family: 'Dosis', sans-serif;
+}
+
+.home-section h3 {
+    color: #007ead;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+}

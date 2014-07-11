@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AlloyUI</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Eduardo Lundgren, Nate Cavanaugh">
+    <meta name="description" content="Provides the user with a method of organizing, arranging, and editing tables of information.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook Tags -->
+    <meta property="fb:app_id" content="176947299114210">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:9778">
+    <meta property="og:image" content="http://localhost:9778/img/facebook-share.jpg">
+    <meta property="og:title" content="Examples - Data Table | AlloyUI">
+    <meta property="og:description" content="Provides the user with a method of organizing, arranging, and editing tables of information.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://localhost:9778/img/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis|Roboto:400,700,700italic,400italic">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://cdn.alloyui.com/3.0.0pr1/aui-css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/main.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/page.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/examples.css">
+    <link rel="stylesheet" href="http://localhost:9778/css/code.css">
+
+    <!-- JS -->
+    <script src="http://cdn.alloyui.com/3.0.0pr1/aui/aui-min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="http://localhost:9778/" class="navbar-brand">
+                <img src="http://localhost:9778/img/logo.svg" alt="AlloyUI Logo" width="126" height="24">
+            </a>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a href="./" onclick="return false;" class="dropdown-toggle">v3.0.x <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">v2.5.x</a></li>
+                        <li><a href="#">v2.0.x</a></li>
+                        <li><a href="#">v1.5.x</a></li>
+                        <li><a href="#">v1.0.x</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://localhost:9778/examples/">Examples</a></li>
+                <li><a href="http://localhost:9778/tutorials/">Tutorials</a></li>
+                <li><a href="http://localhost:9778/contributing/">Contributing</a></li>
+                <li><a href="http://localhost:9778/api/">API Docs</a></li>
+                <li><a href="http://localhost:9778/rosetta-stone/">Rosetta Stone</a></li>
+                <li><a href="https://yuilibrary.com/">YUI</a></li>
+                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+<main id="Data Table">
+    <header class="page-title">
+        <h5>Examples</h5>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+    <div class="col-md-9">
+        <h6 id="single-title">Data Table</h6>
+
+        <div id="single-dropdown" class="btn-group">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-new-window"></span> API Docs
+            </button>
+            <button type="button" class="btn btn-default dropdown-toggle">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="http://alloyui.com/api/modules/aui-datatable.html#attributes">Attributes</a></li>
+                <li><a href="http://alloyui.com/api/modules/aui-datatable.html#events">Events</a></li>
+                <li><a href="http://alloyui.com/api/modules/aui-datatable.html#methods">Methods</a></li>
+            </ul>
+        </div>
+
+        <ul id="single-tabs" class="nav nav-tabs">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        <li class="active">
+                    
+                        <a href="/examples/datatable">Introduction</a></li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+
+        <p>Provides the user with a method of organizing, arranging, and editing tables of information.</p>
+
+        <hr>
+
+        <h4 id="getting-started">Getting Started</h4>
+<p>First load the seed and CSS files, if you haven&#39;t yet.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://cdn.alloyui.com/3.0.0pr1/aui/aui-min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://cdn.alloyui.com/3.0.0pr1/aui-css/css/bootstrap.min.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">link</span>&gt;</span>
+</code></pre>
+<p>Then initialize AlloyUI and load the Data Table module.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-datatable'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-comment">// code goes here</span>
+  }
+);
+</code></pre>
+<hr>
+<h4 id="using-data-table">Using Data Table</h4>
+<p>Create an HTML element to house the Data Table.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myDataTable"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>The most basic of tables require two kinds of information, table columns and data. Pass both into your Data Table after <code>columns</code> and <code>data</code>, and don&#39;t forget to render it!</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-datatable'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">var</span> columns = [
+      name,
+      age
+    ];
+
+    <span class="hljs-keyword">var</span> data = [
+      {
+        name: <span class="hljs-string">'Bob'</span>,
+        age: <span class="hljs-string">'28'</span>
+      },
+      {
+        name: <span class="hljs-string">'Joe'</span>,
+        age: <span class="hljs-string">'72'</span>
+      },
+      {
+        name: <span class="hljs-string">'Sarah'</span>,
+        age: <span class="hljs-string">'35'</span>
+      }
+    ];
+
+    <span class="hljs-keyword">new</span> Y.DataTable(
+      {
+        columns: columns,
+        data: data
+      }
+    ).render(<span class="hljs-string">"#myDataTable"</span>);
+  }
+);
+</code></pre>
+<hr>
+<h4 id="configuring-data-table">Configuring Data Table</h4>
+<p>A plugin can be utilized to allow the highlighting of table cells.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-datatable'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">new</span> Y.DataTable(
+      {
+        columns: columns,
+        data: data,
+        plugins: [
+          {
+            fn: Y.Plugin.DataTableHighlight
+          }
+        ]
+      }
+    ).render(<span class="hljs-string">"#myDataTable"</span>);
+  }
+);
+</code></pre>
+<p>Table cells can also be edited when permitted in the columns object. Here, <code>key</code> refers to the value displayed in the column head.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-datatable'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">var</span> columns = [
+      {
+        editor: <span class="hljs-keyword">new</span> Y.TextAreaCellEditor(),
+        key: <span class="hljs-string">'name'</span>
+      },
+      {
+        editor: <span class="hljs-keyword">new</span> Y.DateCellEditor(),
+        key: <span class="hljs-string">'date'</span>
+      }
+    ];
+
+    <span class="hljs-keyword">new</span> Y.DataTable(
+      {
+        columns: columns,
+        data: data
+      }
+    ).render(<span class="hljs-string">"#myDataTable"</span>);
+  }
+);
+</code></pre>
+<div class="alert alert-info">
+  <strong>Note:</strong> more editors are available for different types of data, such as drop down selectors, and radio buttons. See Data Table examples for available editors.
+</div>
+
+<p>Columns can also be set to sort when the component <code>datatable-sort</code> is passed in, and <code>sortable</code> is set to <code>true</code> in the columns object.</p>
+<pre class="highlight"><code class="hljs javascript">YUI().use(
+  <span class="hljs-string">'aui-datatable'</span>,
+  <span class="hljs-string">'datatable-sort'</span>,
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Y)</span> {</span>
+    <span class="hljs-keyword">var</span> columns = [
+      {
+        key: <span class="hljs-string">'name'</span>,
+        sortable: <span class="hljs-literal">true</span>
+      },
+      {
+        key: <span class="hljs-string">'date'</span>,
+        sortable: <span class="hljs-literal">true</span>
+      }
+    ];
+
+    <span class="hljs-keyword">new</span> Y.DataTable(
+      {
+        columns: columns,
+        data: data
+      }
+    ).render(<span class="hljs-string">"#myDataTable"</span>);
+  }
+);
+</code></pre>
+
+
+        <div class="alert alert-info">
+            For more information about configuration, check out our <a href="http://alloyui.com/api/modules/aui-datatable.html" target="_blank">API Docs</a>.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/ace-editor">
+                    
+                        Ace Editor</a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/affix">
+                    
+                        Affix</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/alert">
+                    
+                        Alert</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/audio">
+                    
+                        Audio</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/button">
+                    
+                        Button</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/carousel">
+                    
+                        Carousel</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/char-counter">
+                    
+                        Char Counter</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/color-picker">
+                    
+                        Color Picker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li class="active"><a href="/examples/datatable">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                    
+                        Data Table</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/datepicker">
+                    
+                        Datepicker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/diagram-builder">
+                    
+                        Diagram Builder</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/dropdown">
+                    
+                        Dropdown</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/form-builder">
+                    
+                        Form Builder</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/form-validator">
+                    
+                        Form Validator</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/io">
+                    
+                        I/O</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/image-cropper">
+                    
+                        Image Cropper</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/image-viewer">
+                    
+                        Image Viewer</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/modal">
+                    
+                        Modal</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/node">
+                    
+                        Node</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/pagination">
+                    
+                        Pagination</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/popover">
+                    
+                        Popover</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/progressbar">
+                    
+                        Progress Bar</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/rating">
+                    
+                        Rating</a>
+                    </li>
+                
+            
+                
+            
+                
+                    
+                        <li><a href="/examples/scheduler">
+                    
+                        Scheduler</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/scrollspy">
+                    
+                        Scrollspy</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/sortable">
+                    
+                        Sortable</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/surface">
+                    
+                        Surface</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tabview">
+                    
+                        Tabview</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/timepicker">
+                    
+                        Timepicker</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/toggler">
+                    
+                        Toggler</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/toolbar">
+                    
+                        Toolbar</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tooltip">
+                    
+                        Tooltip</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/tree">
+                    
+                        Tree View</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/undo-redo">
+                    
+                        Undo/Redo</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/video">
+                    
+                        Video</a>
+                    </li>
+                
+            
+                
+                    
+                        <li><a href="/examples/viewport">
+                    
+                        Viewport</a>
+                    </li>
+                
+            
+        </ul>
+    </div>
+
+</div>
+
+
+<!-- <script src="http://localhost:9778/js/single.js"></script> -->
+
+<link rel="stylesheet" href="http://localhost:9778/css/single.css">
+        </div>
+    </div>
+</main>
+
+    <script src="http://localhost:9778/js/navbar.js"></script>
+</body>
+</html>
