@@ -15,7 +15,7 @@ layout: default
   <div class="container">
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>repos</h3>
         <p>\o/</p>
       </div>
@@ -33,7 +33,7 @@ layout: default
     <hr>
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>issues</h3>
         <p>github or jira?</p>
       </div>
@@ -51,7 +51,7 @@ layout: default
     <hr>
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>code style</h3>
         <p>tabs or spaces?</p>
       </div>
@@ -64,7 +64,7 @@ layout: default
     <hr>
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>tests</h3>
         <p>must-have</p>
       </div>
@@ -77,7 +77,7 @@ layout: default
     <hr>
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>docs</h3>
         <p>must-have²</p>
       </div>
@@ -90,7 +90,7 @@ layout: default
     <hr>
 
     <div class="row">
-      <div class="title span12">
+      <div class="title col-xs-12">
         <h3>history</h3>
         <p>tracking</p>
       </div>
